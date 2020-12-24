@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="15px" viewBox="0 0 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Interface Icons/ Calendar</title>
+    <g id="Bets-History" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bets-History---List-View---1920-x-1024" transform="translate(-1016.000000, -141.000000)" fill="#62676E">
+            <g id="Dropdown-Button" transform="translate(1005.000000, 130.000000)">
+                <g id="Icons/Interface-Icons/-Calendar-Copy-2" transform="translate(6.000000, 6.000000)">
+                    <path d="M8,7 L8,6 C8,5.4475 8.448,5 9,5 C9.552,5 10,5.4475 10,6 L10,7 C10,7.552 9.552,8 9,8 C8.448,8 8,7.5525 8,7 Z M15,8 C15.5525,8 16,7.552 16,7 L16,6 C16,5.4475 15.5525,5 15,5 C14.448,5 14,5.4475 14,6 L14,7 C14,7.5525 14.4475,8 15,8 Z M19,20 L5,20 L5,7 L7.5,7 C7.5,7.89483333 8.173,8.625 9,8.625 C9.827,8.625 10.5,7.89483333 10.5,7 L13.5,7 C13.5,7.89483333 14.173,8.625 15,8.625 C15.827,8.625 16.5,7.89483333 16.5,7 L19,7 L19,20 L19,20 Z M18,10 L6,10 L6,19 L18,19 L18,10 L18,10 Z M10,12 L8,12 L8,14 L10,14 L10,12 Z M13,12 L11,12 L11,14 L13,14 L13,12 Z M16,12 L14,12 L14,14 L16,14 L16,12 Z M10,15 L8,15 L8,17 L10,17 L10,15 Z M13,15 L11,15 L11,17 L13,17 L13,15 Z M16,15 L14,15 L14,17 L16,17 L16,15 Z" id="Icons/Interface-Icons/-Calendar"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

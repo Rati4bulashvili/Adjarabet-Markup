@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- navbar -------------------------------------------- -->
+    <ul class="navbar">
+
+        <li class="navbar__search-icon"><img  src="assets/Icons/Interface Icons/icons8-search.svg"></img></li>
+
+        <li class="navbar__in"><input type="text" placeholder='Search for Team or League...'></li>
+        <li class="navbar__hr"></li>
+
+        <ul class="navbar--center">
+            <li class="navbar--center__items--active navbar--center__items"><a href="#">DASHBOARD</a></li>
+            <li class="navbar--center__items"><a href="#">LIVE</a></li>
+            <li class="navbar--center__items"> <a href="#">VIRTUAL</a></li>
+            <li class="navbar--center__items"><a href="#">BETS HISTORY</a></li>
+            <li class="navbar--center__items"><a href="#">LIVESCORE</a></li>
+        </ul>
+        
+        <ul class="navbar--right">
+            <li class="navbar--right__time">
+                10:20:30
+            </li>
+                
+            
+                <li class="navbar--right__more">
+                   <a href="#"><img src="/assets/Icons/Interface Icons/arrow down.svg" alt=""></a>
+                </li>
+            
+        </ul>
+
+        <div class="navbar__settings">
+            <a href="#"><img src="/assets/Icons/Interface Icons/Settings.svg" alt=""></a>
+        </div> 
+    </ul>
+
+    <!-- side------------------------------------------- -->
+<div class="resp">
+
+    <div class="side">
+        
+        <h4 class="side__header">MY LIVESCORE</h4>
+        
+        <h5 class="side__sub-header"><img src="/assets/Icons/Sports/L.svg" alt=""> Soccer</h5>
+        
+        <ul class="side__soccer">
+            
+            <li class="side__soccer--1 ">
+                <div class="side__soccer--1__name">Nijmege</div>
+                <div class="side__soccer--1__icon"><img src="/assets/Icons/Teams/RealMadrid.svg" alt=""></div>
+                <div class="side__soccer--1__score">
+                    <div class="side__soccer--1__score--up">FT</div>
+                    <div class="side__soccer--1__score--mid">1 - 1</div>
+                    <div class="side__soccer--1__score--down">5 DEC 15:30</div>
+                </div>
+                <div class="side__soccer--1__icon"><img src="/assets/Icons/Teams/Manchester.svg" alt=""></div>
+                <div class="side__soccer--1__name">Veenendaal</div>
+            </li>
+            
+            <li class="side__soccer--2 ">
+                <div class="side__soccer--2__name">Aarlen</div>
+                <div class="side__soccer--2__icon"><img src="/assets/Icons/Teams/Milan.svg" alt=""></div>
+                <div class="side__soccer--2__score">
+                    <div class="side__soccer--2__score--up">FT</div>
+                    <div class="side__soccer--2__score--mid">1 - 1</div>
+                    <div class="side__soccer--2__score--down">5 DEC 15:30</div>
+                </div>
+                <div class="side__soccer--2__icon"><img src="/assets/Icons/Teams/Milan.svg" alt=""></div>
+                <div class="side__soccer--2__name">Beersel</div>
+            </li>
+            
+            <li class="side__soccer--3 ">
+                <div class="side__soccer--3__name">Bergen</div>
+                <div class="side__soccer--3__icon"><img src="/assets/Icons/Teams/TeamOne.svg" alt=""></div>
+                <div class="side__soccer--3__score">
+                    <div class="side__soccer--3__score--up">FT</div>
+                    <div class="side__soccer--3__score--mid">1 - 1</div>
+                    <div class="side__soccer--3__score--down">5 DEC 15:30</div>
+                </div>
+                <div class="side__soccer--3__icon"><img src="/assets/Icons/Teams/Bayern.svg" alt=""></div>
+                <div class="side__soccer--3__name">Aarschot</div>
+            </li>
+            
+            <li class="side__soccer--4 ">
+                <div class="side__soccer--4__name">Kapellen</div>
+                <div class="side__soccer--4__icon"><img src="/assets/Icons/Teams/BVB.svg" alt=""></div>
+                <div class="side__soccer--4__score">
+                    <div class="side__soccer--4__score--up">FT</div>
+                    <div class="side__soccer--4__score--mid">1 - 1</div>
+                    <div class="side__soccer--4__score--down">5 DEC 15:30</div>
+                </div>
+                <div class="side__soccer--4__icon"><img src="/assets/Icons/Teams/Chelsea.svg" alt=""></div>
+                <div class="side__soccer--4__name">Grimbergen</div>
+            </li>
+            
+        </ul>
+        
+        <h5 class="side__sub-header2"><img src="/assets/Icons/Sports/J.svg" alt=""> Basketball</h5>
+        <ul class="side__basketball">
+            
+            <li class="side__soccer--1 ">
+                <div class="side__basketball--1__name">Nijmege</div>
+                <div class="side__basketball--1__icon"><img src="/assets/Icons/Teams/RealMadrid.svg" alt=""></div>
+                <div class="side__basketball--1__score">
+                    <div class="side__basketball--1__score--up">FT</div>
+                    <div class="side__basketball--1__score--mid">1 - 1</div>
+                    <div class="side__basketball--1__score--down">5 DEC 15:30</div>
+                </div>
+                <div class="side__basketball--1__icon"><img src="/assets/Icons/Teams/Manchester.svg" alt=""></div>
+                <div class="side__basketball--1__name">Veenendaal</div>
+            </li>
+            
+            <li class="side__basketball--2 ">
+                <div class="side__basketball--2__name">Aarlen</div>
+                <div class="side__basketball--2__icon"><img src="/assets/Icons/Teams/Milan.svg" alt=""></div>
+                <div class="side__basketball--2__score">
+                    <div class="side__basketball--2__score--up">FT</div>
+                    <div class="side__basketball--2__score--mid">1 - 1</div>
+                    <div class="side__basketball--2__score--down">5 DEC 15:30</div>
+                </div>
+                <div class="side__basketball--2__icon"><img src="/assets/Icons/Teams/Milan.svg" alt=""></div>
+                <div class="side__basketball--2__name">Beersel</div>
+            </li>
+            
+            <li class="side__basketball--3 ">
+                <div class="side__basketball--3__name">Bergen</div>
+                <div class="side__basketball--3__icon"><img src="/assets/Icons/Teams/TeamOne.svg" alt=""></div>
+                <div class="side__basketball--3__score">
+                    <div class="side__basketball--3__score--up">FT</div>
+                    <div class="side__basketball--3__score--mid">1 - 1</div>
+                    <div class="side__basketball--3__score--down">5 DEC 15:30</div>
+                </div>
+                <div class="side__basketball--3__icon"><img src="/assets/Icons/Teams/Bayern.svg" alt=""></div>
+                <div class="side__basketball--3__name">Aarschot</div>
+            </li>
+            
+            <li class="side__basketball--4 ">
+                <div class="side__basketball--4__name">Kapellen</div>
+                <div class="side__basketball--4__icon"><img src="/assets/Icons/Teams/BVB.svg" alt=""></div>
+                <div class="side__basketball--4__score">
+                    <div class="side__basketball--4__score--up">FT</div>
+                    <div class="side__basketball--4__score--mid">1 - 1</div>
+                    <div class="side__basketball--4__score--down">5 DEC 15:30</div>
+                </div>
+                <div class="side__basketball--4__icon"><img src="/assets/Icons/Teams/Chelsea.svg" alt=""></div>
+                <div class="side__basketball--4__name">Grimbergen</div>
+            </li>
+
+        </ul>
+
+        <button class="side__btn"><div>FULL LIVESCORE</div></button>
+    </div>
+
+    <!-- main---------------------------------------------------------- -->
+
+    <div class="main">
+
+        <ul class="main__nav">
+            <li class="main__nav__items main__nav__items--active"><a href="#">ALL TICKETS</a></li>
+            <li class="main__nav__items"><a href="#">ACTIVE</a></li>
+            <li class="main__nav__items"><a href="#">FINISHED</a></li>
+            <li class="main__nav__items"><a href="#">MY LIVESCORE</a></li>
+            <li class="main__nav__items--right">
+                <a href="#" class="main__nav__items--right-1">TIMELINE</a>
+                <a href="#" class="main__nav__items--right-2">LIST</a>
+            </li>
+        </ul>
+
+        <div class="main__date">
+
+            <div class="main__date--left">
+                <img src="/assets/Icons/Interface Icons/Sort.svg" alt="">
+                <div class="main__date--left__text">Resolved Date</div>
+                <img src="/assets/Icons/Interface Icons/arrow down.svg" alt="">
+            </div>
+            <div class="main__date--right">
+                <img src="/assets/Icons/Interface Icons/Calendar.svg" alt="">
+                <div class="main__date--right__text">9 Jan 2018 - 10 Feb 2018</div>
+                <img src="assets/Icons/Interface Icons/arrow down.svg">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <ul class="main__history">
+                
+                
+                <ul class="main__history--left">
+                    
+                    <li class="main__history--left__icon">
+                        <img src="assets/Icons/Interface Icons/Ongoing.svg">
+                        
+                        <div>ACTIVE</div>
+                    </li>
+                    
+                    <li class="main__history--left__id">
+                        <div class='main__history--left__id--up'>1 DEC 12:15</div>
+                        <div class="main__history--left__id--down">#425612</div>
+                    </li>
+                    
+                    <li class="main__history--left__poss">
+                        <div class='main__history--left__poss--up'>POSS.WIN</div>
+                        <div class='main__history--left__poss--down--white'>15,551.50 <sup>GEL</sup></div>
+                    </li>
+                    
+                </ul>
+                
+                <ul class="main__history--right">
+                    
+                    <li class="main__history--right__odds">
+                        <div class="main__history--right__odds--up">ODDS</div>
+                        <div class="main__history--right__odds--mid">1.40</div>
+                    </li>
+                    
+                    <li class="main__history--right__stake">
+                        <div class="main__history--right__stake--up">STAKE</div>
+                        <div class="main__history--right__stake--mid">541.00 <sup>GEL</sup></div>
+                    </li>
+                </ul>
+                
+                
+                <ul class="main__history__btns">
+                    <li class="main__history__btns--1"><img src="/assets/Icons/Interface Icons/Settings.svg"></li>
+                    <li class="main__history__btns--2"><img src="/assets/Icons/Interface Icons/Settings.svg"> <div>cashout</div></li>
+                </ul>
+                
+                <ul class="main__history__btns2">
+                    <li class="main__history__btns2--3"><img src="/assets/Icons/Interface Icons/Settings.svg"></li>
+                    <li class="main__history__btns2--4"><img src="/assets/Icons/Interface Icons/Settings.svg"></li>
+                </ul>
+                
+            </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <ul class="main__history">
+                
+                
+                <ul class="main__history--left">
+                    
+                    <li class="main__history--left__icon">
+                        <img src="assets/Icons/Interface Icons/Ongoing.svg">
+                        
+                        <div>ACTIVE</div>
+                    </li>
+                    
+                    <li class="main__history--left__id">
+                        <div class='main__history--left__id--up'>1 DEC 12:15</div>
+                        <div class="main__history--left__id--down">#425612</div>
+                    </li>
+                    
+                    <li class="main__history--left__poss">
+                        <div class='main__history--left__poss--up'>POSS.WIN</div>
+                        <div class='main__history--left__poss--down--white'>20.00 <sup>GEL</sup></div>
+                    </li>
+                    
+                </ul>
+                
+                <div class="main__history--mid">
+                    <div class='main__history--mid--up'>CASHED OUT</div>
+                    <div class='main__history--mid--down'>20.00 <sup>GEL</sup></div>
+                </div>
+                
+                <ul class="main__history--right">
+                    
+                    <li class="main__history--right__odds">
+                        <div class="main__history--right__odds--up">FORMULA</div>
+                        <div class="main__history--right__odds--mid">(5-2)+1</div>
+                    </li>
+                    
+                    <li class="main__history--right__stake">
+                        <div class="main__history--right__stake--up">STAKE</div>
+                        <div class="main__history--right__stake--mid">541.00 <sup>GEL</sup></div>
+                    </li>
+                </ul>
+                
+                
+                <ul class="main__history__btns">
+                    <li class="main__history__btns--1"><img src="/assets/Icons/Interface Icons/Settings.svg"></li>
+                    <li class="main__history__btns--2"><img src="/assets/Icons/Interface Icons/Settings.svg"> <div>cashout</div></li>
+                </ul>
+                
+            </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <ul class="main__history">
+                
+                
+                <ul class="main__history--left">
+                    
+                    <li class="main__history--left__icon">
+                        <img src="assets/Icons/Interface Icons/Lost.svg">
+                        
+                        <div>LOST</div>
+                    </li>
+                    
+                    <li class="main__history--left__id">
+                        <div class='main__history--left__id--up'>1 DEC 12:15</div>
+                        <div class="main__history--left__id--down">#425612</div>
+                    </li>
+                    
+                    <li class="main__history--left__poss">
+                        <div class='main__history--left__poss--up'>CASHAED OUT</div>
+                        <div class='main__history--left__poss--down'>10.00 <sup>GEL</sup></div>
+                    </li>
+                    
+                </ul>
+                
+                <ul class="main__history--right">
+                    
+                    <li class="main__history--right__odds">
+                        <div class="main__history--right__odds--up">ODDS</div>
+                        <div class="main__history--right__odds--mid">1.15</div>
+                    </li>
+                    
+                    <li class="main__history--right__stake">
+                        <div class="main__history--right__stake--up">STAKE</div>
+                        <div class="main__history--right__stake--mid">23.00 <sup>GEL</sup></div>
+                    </li>
+                </ul>
+                
+                
+            </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <ul class="main__history">
+                
+                
+                <ul class="main__history--left">
+                    
+                    <li class="main__history--left__icon">
+                        <img src="assets/Icons/Interface Icons/Half Loose.svg">
+                        
+                        <div>HALF LOST</div>
+                    </li>
+                    
+                    <li class="main__history--left__id">
+                        <div class='main__history--left__id--up'>1 DEC 12:15</div>
+                        <div class="main__history--left__id--down">#425612</div>
+                    </li>
+                    
+                    <li class="main__history--left__poss">
+                        <div class='main__history--left__poss--up'>HALF LOST</div>
+                        <div class='main__history--left__poss--down'>20.30 <sup>GEL</sup></div>
+                    </li>
+                    
+                </ul>
+                
+                <ul class="main__history--right">
+                    
+                    <li class="main__history--right__odds">
+                        <div class="main__history--right__odds--up">ODDS</div>
+                        <div class="main__history--right__odds--mid">3.05</div>
+                    </li>
+                    
+                    <li class="main__history--right__stake">
+                        <div class="main__history--right__stake--up">STAKE</div>
+                        <div class="main__history--right__stake--mid">624.00 <sup>GEL</sup></div>
+                    </li>
+                </ul>
+                
+                
+            </ul>
+            
+            
+            
+            
+            
+            
+            <ul class="main__history">
+                
+                
+                <ul class="main__history--left">
+                    
+                    <li class="main__history--left__icon">
+                        <img src="assets/Icons/Interface Icons/Half Win.svg">
+                        
+                        <div>HALF WON</div>
+                    </li>
+                    
+                    <li class="main__history--left__id">
+                        <div class='main__history--left__id--up'>1 DEC 12:15</div>
+                        <div class="main__history--left__id--down">#425612</div>
+                    </li>
+                    
+                    <li class="main__history--left__poss">
+                        <div class='main__history--left__poss--up'>HALF WON</div>
+                        <div class='main__history--left__poss--down'>20.30 <sup>GEL</sup></div>
+                    </li>
+                    
+                </ul>
+                
+                <ul class="main__history--right">
+                    
+                    <li class="main__history--right__odds">
+                        <div class="main__history--right__odds--up">ODDS</div>
+                        <div class="main__history--right__odds--mid">2.80</div>
+                    </li>
+                    
+                    <li class="main__history--right__stake">
+                        <div class="main__history--right__stake--up">STAKE</div>
+                        <div class="main__history--right__stake--mid">604.00 <sup>GEL</sup></div>
+                    </li>
+                </ul>
+                
+                
+            </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <ul class="main__history">
+                
+                
+                <ul class="main__history--left">
+                    
+                    <li class="main__history--left__icon">
+                        <img src="assets/Icons/Interface Icons/Won.svg">
+                        
+                        <div>VOIDED</div>
+                    </li>
+                    
+                    <li class="main__history--left__id">
+                        <div class='main__history--left__id--up'>1 DEC 12:15</div>
+                        <div class="main__history--left__id--down">#425612</div>
+                    </li>
+                    
+                    <li class="main__history--left__poss">
+                        <div class='main__history--left__poss--up'>WON</div>
+                        <div class='main__history--left__poss--down'>1,321.63 <sup>GEL</sup></div>
+                    </li>
+                    
+                </ul>
+                
+                <ul class="main__history--right">
+                    
+                    <li class="main__history--right__odds">
+                        <div class="main__history--right__odds--up">ODDS</div>
+                        <div class="main__history--right__odds--mid">3.40</div>
+                    </li>
+                    
+                    <li class="main__history--right__stake">
+                        <div class="main__history--right__stake--up">STAKE</div>
+                        <div class="main__history--right__stake--mid">565.40 <sup>GEL</sup></div>
+                    </li>
+                </ul>
+                
+                
+            </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            <ul class="main__history">
+                
+                
+                <ul class="main__history--left">
+                    
+                    <li class="main__history--left__icon">
+                        <img src="assets/Icons/Interface Icons/Lost.svg">
+                        
+                        <div>LOST</div>
+                    </li>
+                    
+                    <li class="main__history--left__id">
+                        <div class='main__history--left__id--up'>1 DEC 12:15</div>
+                        <div class="main__history--left__id--down">#425612</div>
+                    </li>
+                    
+                    <li class="main__history--left__poss">
+                        <div class='main__history--left__poss--up'>CASHED OUT</div>
+                        <div class='main__history--left__poss--down'>10.00 <sup>GEL</sup></div>
+                    </li>
+                    
+                </ul>
+                
+                <div class="main__history--left__gift">
+                    <img src="/assets/Icons/Interface Icons/Bonus.svg" alt="">
+                </div>
+                
+                <ul class="main__history--right">
+                    
+                    <li class="main__history--right__odds">
+                        <div class="main__history--right__odds--up">ODDS</div>
+                        <div class="main__history--right__odds--mid">1.15</div>
+                    </li>
+                    
+                    <li class="main__history--right__stake">
+                        <div class="main__history--right__stake--up">STAKE</div>
+                        <div class="main__history--right__stake--mid">823.60 <sup>GEL</sup></div>
+                    </li>
+                </ul>
+                
+                
+            </ul>
+            
+            
+            
+            
+            <ul class="main__history">
+                
+                
+                <ul class="main__history--left">
+                    
+                    <li class="main__history--left__icon">
+                        <img src="assets/Icons/Interface Icons/Lost.svg">
+                        
+                        <div>LOST</div>
+                    </li>
+                    
+                    <li class="main__history--left__id">
+                        <div class='main__history--left__id--up'>1 DEC 12:15</div>
+                        <div class="main__history--left__id--down">#425612</div>
+                    </li>
+                    
+                    <li class="main__history--left__poss-hidden">
+                        <div class='main__history--left__poss--up'>CASHED OUT</div>
+                        <div class='main__history--left__poss--down'>10.00 <sup>GEL</sup></div>
+                    </li>
+                </ul>
+                
+                <ul class="main__history--right">
+                    
+                    <li class="main__history--right__odds">
+                        <div class="main__history--right__odds--up">ODDS</div>
+                        <div class="main__history--right__odds--mid">3.05</div>
+                    </li>
+                    
+                    <li class="main__history--right__stake">
+                        <div class="main__history--right__stake--up">STAKE</div>
+                        <div class="main__history--right__stake--mid">604.25 <sup>GEL</sup></div>
+                    </li>
+                </ul>
+                
+                
+            </ul>
+            
+            
+            
+            
+            <ul class="main__history">
+                
+                
+                <ul class="main__history--left">
+                    
+                    <li class="main__history--left__icon">
+                        <img src="assets/Icons/Interface Icons/Won.svg">
+                        
+                        <div>WON</div>
+                    </li>
+                    
+                    <li class="main__history--left__id">
+                        <div class='main__history--left__id--up'>1 DEC 12:15</div>
+                        <div class="main__history--left__id--down">#425612</div>
+                    </li>
+                    
+                    <li class="main__history--left__poss">
+                        <div class='main__history--left__poss--up'>WON</div>
+                        <div class='main__history--left__poss--down'>20.30 <sup>GEL</sup></div>
+                    </li>
+                    
+                </ul>
+                
+            <ul class="main__history--right">
+
+                <li class="main__history--right__odds">
+                    <div class="main__history--right__odds--up">ODDS</div>
+                    <div class="main__history--right__odds--mid">2.80</div>
+                </li>
+    
+                <li class="main__history--right__stake">
+                    <div class="main__history--right__stake--up">STAKE</div>
+                    <div class="main__history--right__stake--mid">565.40 <sup>GEL</sup></div>
+                </li>
+            </ul>
+    
+
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <ul class="main__history">
+
+            
+            <ul class="main__history--left">
+
+                <li class="main__history--left__icon">
+                    <img src="assets/Icons/Interface Icons/Won.svg">
+                    
+                    <div>WON</div>
+                </li>
+                    
+                <li class="main__history--left__id">
+                    <div class='main__history--left__id--up'>1 DEC 12:15</div>
+                    <div class="main__history--left__id--down">#425612</div>
+                </li>
+
+                <li class="main__history--left__poss">
+                    <div class='main__history--left__poss--up'>WON</div>
+                    <div class='main__history--left__poss--down'>1,321.63 <sup>GEL</sup></div>
+                </li>
+                
+            </ul>
+
+            <ul class="main__history--right">
+
+                <li class="main__history--right__odds">
+                    <div class="main__history--right__odds--up">ODDS</div>
+                    <div class="main__history--right__odds--mid">3.40</div>
+                </li>
+    
+                <li class="main__history--right__stake">
+                    <div class="main__history--right__stake--up-freebet">FREEBET</div>
+                    <div class="main__history--right__stake--mid">823.60 <sup>GEL</sup></div>
+                </li>
+            </ul>
+    
+
+        </ul>
+
+
+
+
+
+
+
+
+
+        <ul class="main__history">
+
+            
+            <ul class="main__history--left">
+
+                <li class="main__history--left__icon">
+                    <img src="assets/Icons/Interface Icons/Won.svg">
+                    
+                    <div>WON</div>
+                </li>
+                    
+                <li class="main__history--left__id">
+                    <div class='main__history--left__id--up'>1 DEC 12:15</div>
+                    <div class="main__history--left__id--down">#425612</div>
+                </li>
+
+                <li class="main__history--left__poss">
+                    <div class='main__history--left__poss--up'>WON</div>
+                    <div class='main__history--left__poss--down'>20.30 <sup>GEL</sup></div>
+                </li>
+                
+            </ul>
+
+            <ul class="main__history--right">
+
+                <li class="main__history--right__odds">
+                    <div class="main__history--right__odds--up">ODDS</div>
+                    <div class="main__history--right__odds--mid">2.80</div>
+                </li>
+    
+                <li class="main__history--right__stake">
+                    <div class="main__history--right__stake--up">STAKE</div>
+                    <div class="main__history--right__stake--mid">565.40 <sup>GEL</sup></div>
+                </li>
+            </ul>
+    
+
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+        <ul class="main__history">
+
+            
+            <ul class="main__history--left">
+
+                <li class="main__history--left__icon">
+                    <img src="assets/Icons/Interface Icons/Won.svg">
+                    
+                    <div>WON</div>
+                </li>
+                    
+                <li class="main__history--left__id">
+                    <div class='main__history--left__id--up'>1 DEC 12:15</div>
+                    <div class="main__history--left__id--down">#425612</div>
+                </li>
+
+                <li class="main__history--left__poss">
+                    <div class='main__history--left__poss--up'>WON</div>
+                    <div class='main__history--left__poss--down'>1,321.63 <sup>GEL</sup></div>
+                </li>
+                
+            </ul>
+
+            <ul class="main__history--right">
+
+                <li class="main__history--right__odds">
+                    <div class="main__history--right__odds--up">ODDS</div>
+                    <div class="main__history--right__odds--mid">3.40</div>
+                </li>
+    
+                <li class="main__history--right__stake">
+                    <div class="main__history--right__stake--up">STAKE</div>
+                    <div class="main__history--right__stake--mid">823.60 <sup>GEL</sup></div>
+                </li>
+            </ul>
+    
+
+        </ul>
+
+
+        <div class="main__container">
+            <button class="main__container__btn">
+                DISPLAY MORE
+            </button> 
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
