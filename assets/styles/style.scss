@@ -53,7 +53,7 @@ table {
 	border-spacing: 0;
 }
 
-// navbar////////////////////////////////////////////////////////////
+// navbar---------------------------------------------------------------------
 
 .navbar{
     display: flex;
@@ -100,11 +100,20 @@ table {
         li{
             margin: 0px 12px;
         }
+
         
         &__items{
+            
+            
             a{
                 font-size: 18px;
                 color: #999;
+            }
+
+            &--active{
+                a{
+                    color: white;
+                }
             }
         }        
     }
@@ -149,7 +158,7 @@ table {
 }
 
 
-// side ///////////////////////////////////////////////////
+// side -----------------------------------------------------------------
 
 .resp{
     width: 100%;
@@ -162,7 +171,6 @@ table {
 .side{
     width: 450px;
     margin: 0px 0px 0px 75px;
-    
     
     &__header{
         height: 67px;
@@ -189,7 +197,7 @@ table {
         }
     }
     
-    
+
     &__soccer, &__basketball{
         
         &--4{
@@ -198,9 +206,7 @@ table {
         
         &--1, &--2, &--3, &--4{
             border-top: 1px solid $border;
-            
-            
-            
+
             display: flex;
             justify-content: space-around;
             height: 61px;
@@ -209,7 +215,8 @@ table {
             padding: 0px 40px 5px 40px;
             
             &:hover {
-                background-color: #33363e;
+                background-color: #33363e; 
+                //ჰოვერის დროს დაბლა კუთხეებში ქვედა ელემენტის მაღლითა ბორდერი ცუდად ჩანს
                 border-radius: 4px;
                 
             }
@@ -265,6 +272,11 @@ table {
                 font-stretch: condensed;
                 letter-spacing: -0.67px;
                 width: 63px;
+                text-align: start;
+            }
+
+            &__name:first-child{
+                text-align: end;
             }
         }
     }
@@ -294,7 +306,7 @@ table {
     }
 }
 
-// main/////////////////////////////////////////////////////////////////
+// main-------------------------------------------------------------------
 
 .main{
     background-color: #232529;
@@ -365,9 +377,19 @@ table {
         }
         
         &__items--active{
-            border-bottom: 2px solid #f40034;
             a{
                 color: white;
+            }
+
+            &:after{
+                content: "";
+                position: relative;
+                width: 137px;
+                height: 2px;
+                display: block;
+                background-color: red;
+                top: 18px;
+                left: -30px;
             }
         }
     }
@@ -411,7 +433,7 @@ table {
             margin-left: auto;
         }
     }
-    //history////////////////////////////////////////////////////////////////////
+    //history------------------------------------------------------------------
     
     
     
@@ -451,7 +473,7 @@ table {
     }
     
     &--mid{
-        margin-right: 185px;  //აქ ძალიან საშინელება მაქვს ალთერნატივა ვერ მოვიფიქრე ჯერ ჯერობით :| 
+        margin-right: 185px;  //აქ ძალიან საშინელება მაქვს ალტერნატივა ვერ მოვიფიქრე ჯერ ჯერობით :| 
         
 
         @media(max-width: 1150px){
@@ -499,7 +521,7 @@ table {
         &__gift{
             margin-right: 295px;
 
-            @media(max-width: 1150px) { //აქაც სასირცხვილო საშინელებააა სანამ ნახავთ გავასწორებ
+            @media(max-width: 1150px) { //აქაც სასირცხვილო საშინელებააა სანამ ნახავთ იმედია გავასწორებ :|
                 margin-right: 104px;
             }
         }
@@ -637,7 +659,7 @@ table {
                 font-size: 16px;
                 line-height: 19px;
                 letter-spacing: -0.67px;
-                font-weight: bold;              //ოდნავ მაღლაა ვიდრე მარჯვენა ელემენტი
+                font-weight: bold;     //ოდნავ მაღლაა ვიდრე მარჯვენა ელემენტი (ჯერ ვერ მივხვდი რატომ)
             }
         }
         &__stake{
@@ -839,15 +861,6 @@ table {
 
             &__btns{
                 display: none;
-                // padding: 0px;
-                // width: 24px;
-                // height: 20px;
-
-                // &--2{
-                //     div{
-                //         display: none;
-                //     }
-                // }
             }
 
             &__btns2{

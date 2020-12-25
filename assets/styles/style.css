@@ -112,6 +112,10 @@ table {
   color: #999;
 }
 
+.navbar--center__items--active a {
+  color: white;
+}
+
 .navbar--right {
   margin-left: auto;
   display: -webkit-box;
@@ -286,6 +290,11 @@ table {
   font-stretch: condensed;
   letter-spacing: -0.67px;
   width: 63px;
+  text-align: start;
+}
+
+.side__soccer--1__name:first-child, .side__soccer--2__name:first-child, .side__soccer--3__name:first-child, .side__soccer--4__name:first-child, .side__basketball--1__name:first-child, .side__basketball--2__name:first-child, .side__basketball--3__name:first-child, .side__basketball--4__name:first-child {
+  text-align: end;
 }
 
 .side__btn {
@@ -382,12 +391,19 @@ a {
   border-bottom-right-radius: 3px;
 }
 
-.main__nav__items--active {
-  border-bottom: 2px solid #f40034;
-}
-
 .main__nav__items--active a {
   color: white;
+}
+
+.main__nav__items--active:after {
+  content: "";
+  position: relative;
+  width: 137px;
+  height: 2px;
+  display: block;
+  background-color: red;
+  top: 18px;
+  left: -30px;
 }
 
 .main__date {
