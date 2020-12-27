@@ -100,11 +100,8 @@ table {
         li{
             margin: 0px 12px;
         }
-
         
         &__items{
-            
-            
             a{
                 font-size: 18px;
                 color: #999;
@@ -142,7 +139,6 @@ table {
                 margin-left: 25px;
             }
         }
-        
     }
 
     &__settings{
@@ -291,10 +287,10 @@ table {
         
         &:hover{
             background: #445;
+            cursor: pointer;
         }
         
         div{
-            
             font-size: 16px;
             color: white;
             line-height: 19px;
@@ -302,7 +298,6 @@ table {
             font-stretch: condensed;
             font-weight: bold;
         }
-        
     }
 }
 
@@ -379,7 +374,10 @@ table {
         &__items--active{
             a{
                 color: white;
+                word-break: keep-all;
             }
+            
+            width: 138px;
 
             &:after{
                 content: "";
@@ -401,16 +399,15 @@ table {
         border-bottom: 1px solid #33363e;
         display: flex;
         align-items: center;
-        
-        &--left, &--right{
+
+        &--left{
+            display: flex;
             border: 1px solid #3a3d43;
             border-radius: 4px;
             padding: 0px 10px 0px 8px;
-            
-            display: flex;
-            align-items: center;
             height: 36px;
-            
+            align-items: center;
+
             &__text{
                 font-stretch: condensed;
                 font-size: 14px;
@@ -418,7 +415,46 @@ table {
                 line-height: 17px;
                 letter-spacing: -0.58px;
                 margin-left: 8px;
-                margin-right: 79px;
+            }
+        }
+        
+        &--right{
+            
+            display: flex;
+            align-items: center;
+            height: 36px;
+
+            &--2{
+                width: 270px;
+            }
+            
+            &--1{
+                width: 142px;
+            }
+            
+            &--2, &--1{
+                display: flex;
+                height: 36px;
+                align-items: center;
+                
+                border: 1px solid #3a3d43;
+                border-radius: 4px;
+                padding: 0px 10px 0px 8px;
+                
+                &__text{
+                    font-stretch: condensed;
+                    font-size: 14px;
+                    color: white;
+                    line-height: 17px;
+                    letter-spacing: -0.58px;
+                    margin-left: 8px;
+                }
+
+                &__link{
+                    margin-left: auto;
+                }
+
+
             }
         }
         
@@ -473,12 +509,12 @@ table {
     }
     
     &--mid{
-        margin-right: 185px;  //აქ ძალიან საშინელება მაქვს ალტერნატივა ვერ მოვიფიქრე ჯერ ჯერობით :| 
+        // margin-right: 185px;  //აქ ძალიან საშინელება მაქვს ალტერნატივა ვერ მოვიფიქრე ჯერ ჯერობით :| 
         
 
-        @media(max-width: 1150px){
-            margin-right: 50px;
-        }
+        // @media(max-width: 1150px){
+        //     margin-right: 50px;
+        // }
         height: 60px;
         padding-top: 8px;
 
@@ -513,100 +549,133 @@ table {
 
 
 
+    &__fix{
 
-
-
-    &--left{
-
-        &__gift{
-            margin-right: 295px;
-
-            @media(max-width: 1150px) { //აქაც სასირცხვილო საშინელებააა სანამ ნახავთ იმედია გავასწორებ :|
-                margin-right: 104px;
-            }
-        }
-
-        width: 330px;
-        margin-right: 315px;
-        height: 60px;
-        
+        width: 800px;
         display: flex;
         justify-content: space-between;
-        font-stretch: condensed;
-        font-size: 14px;
-        line-height: 17px;
-        letter-spacing: -0.58px;
-        
-        &__icon{
-            display: flex;
-            align-items: center;
-            width: 88.31px;
-            
-            img{
-                margin-right: 15px;
-            }
-        }
-        
-        &__id{
-            padding-top: 8px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            
-            &--up{
-                font-weight: bold;
-                font-size: 10px;
-                line-height: 12px;
-                color: #919aa3;
-                letter-spacing: 1.5px;
-                margin-bottom: 2px;
-            }
-            
-            &--down{
-                color: black;
-                padding: 0px 5px;
-                display: flex;
-                background-color: white;
-                border-radius: 2px;
-                justify-content: center;
-                margin-right: auto;
-                font-size: 14px;
-                line-height: 17px;
-                letter-spacing: -0.58px;
-                font-weight: bold;
-            }
-        }
-        
-        &__poss-hidden{
-            visibility: hidden;
+
+        @media(max-width: 1000px) {
+            width: 600px;
         }
 
-        &__poss{
-            padding-top: 8px;
-            width: 76.7px;
-            &--up{
-                font-weight: bold;
-                font-size: 10px;
-                line-height: 12px;
-                color: #919aa3;
-                letter-spacing: 1.5px;
+        &--left{
+
+            @media(max-width: 1000px) {
+                width: 291px;
+            }
+
+            width: 330px;
+            height: 60px;
+            
+            display: flex;
+            justify-content: space-between;
+            font-stretch: condensed;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: -0.58px;
+            
+            &__icon{
+                display: flex;
+                align-items: center;
+                width: 88.31px;
+                
+                img{
+                    margin-right: 15px;
+                }
             }
             
-            &--down{
-                font-size: 16px;
-                font-stretch: condensed;
-                font-weight: bold;
-                line-height: 19px;
-                letter-spacing: -0.67px;
-                color: #03bb4f;
+            &__id{
+                padding-top: 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                @media(max-width: 1366px){
+                    justify-content: center;
+                }
                 
-                &--white{
-                    
+                &--up{
+                    font-weight: bold;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #919aa3;
+                    letter-spacing: 1.5px;
+                    margin-bottom: 2px;
+
+                }
+                
+                &--down{
+                    color: black;
+                    padding: 0px 5px;
+                    display: flex;
+                    background-color: white;
+                    border-radius: 2px;
+                    justify-content: center;
+                    margin-right: auto;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: -0.58px;
+                    font-weight: bold;
+                    @media(max-width: 1366px){
+                        display: none;
+                    }
+                }
+            }
+            
+            &__poss-hidden{
+                visibility: hidden;
+            }
+
+            &__poss{
+                padding-top: 8px;
+                width: 76.7px;
+
+                &--bonus{
+                    padding-top: 0px;
+                    height: 60px;
+                    display: flex;
+                    width: 98px;
+                }
+                
+                &__gift{
+                    align-self: center;
+                }
+
+
+                &--up{
+                    font-weight: bold;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #919aa3;
+                    letter-spacing: 1.5px;
+                }
+                
+                &--down{
                     font-size: 16px;
                     font-stretch: condensed;
                     font-weight: bold;
                     line-height: 19px;
                     letter-spacing: -0.67px;
+                    color: #03bb4f;
+                    
+                    &--white{
+                        
+                        font-size: 16px;
+                        font-stretch: condensed;
+                        font-weight: bold;
+                        line-height: 19px;
+                        letter-spacing: -0.67px;
+                        
+                        sup{
+                            font-weight: bold;
+                            line-height: 12px;
+                            font-size: 10px;
+                            color: #919aa3;
+                            letter-spacing: 1.5px;
+                            vertical-align: super;
+                        }
+                    }
                     
                     sup{
                         font-weight: bold;
@@ -617,98 +686,139 @@ table {
                         vertical-align: super;
                     }
                 }
+            }
+
+            &__cash-out{
+                height: 60px;
+                padding-top: 8px;
+        
+                &--up{
+                    font-weight: bold;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #919aa3;
+                    letter-spacing: 1.5px;
+                    font-stretch: condensed;
+                }
                 
-                sup{
+                &--down{
                     font-weight: bold;
-                    line-height: 12px;
-                    font-size: 10px;
-                    color: #919aa3;
-                    letter-spacing: 1.5px;
-                    vertical-align: super;
+                    font-stretch: condensed;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: -0.67px;
+                    color: #03bb4f;
+                    
+                    sup{
+                        font-weight: bold;
+                        line-height: 12px;
+                        font-size: 10px;
+                        color: #919aa3;
+                        letter-spacing: 1.5px;
+                        vertical-align: super;
+                    }
+                }
+            }
+
+            &--2{
+                width: 450px;
+
+                @media(max-width: 1000px) {
+                    width: 393px; 
+                }
+            }
+
+            &--3{
+                width: 350px;
+
+                @media(max-width: 1000px) {
+                    width: 314px;
                 }
             }
         }
-    }
-    
-    &--right{
-        display: flex;
-        width: 164px;
-        justify-content: space-between;
-        height: 100%;
-        padding-top: 8px;
         
-        
-        &__odds{
+        &--right{
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            width: 164px;
+            justify-content: space-between;
+            height: 100%;
+            padding-top: 8px;
             
-            &--up{
-                font-weight: bold;
-                font-size: 10px;
-                line-height: 12px;
-                color: #919aa3;
-                letter-spacing: 1.5px;
-                font-stretch: condensed;
-                margin-bottom: 2px;
-            }
-            &--mid{
-                font-stretch: condensed;
+            
+            &__odds{
                 display: flex;
-                color: #919aa3;
-                font-size: 16px;
-                line-height: 19px;
-                letter-spacing: -0.67px;
-                font-weight: bold;     //ოდნავ მაღლაა ვიდრე მარჯვენა ელემენტი (ჯერ ვერ მივხვდი რატომ)
-            }
-        }
-        &__stake{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            width: 60.5px;
-            &--up{
-                font-weight: bold;
-                font-size: 10px;
-                line-height: 12px;
-                color: #919aa3;
-                letter-spacing: 1.5px;
-                font-stretch: condensed;
-                margin-bottom: 2px;
-            }
-
-            &--up-freebet{
-                font-weight: bold;
-                font-size: 10px;
-                line-height: 12px;
-                letter-spacing: 1.5px;
-                font-stretch: condensed;
-                margin-bottom: 2px;
-
-                padding: 0px 5px;
-                background-color: #ffd206;
-                color: #1e2024;
-            }
-            
-            &--mid{
-                font-stretch: condensed;
-                font-weight: bold;
-                font-size: 16px;
-                line-height: 19px;
-                letter-spacing: -0.67px;
-                margin-bottom: 2px;
-                sup{
+                flex-direction: column;
+                justify-content: flex-start;
+                
+                &--up{
                     font-weight: bold;
-                    line-height: 12px;
                     font-size: 10px;
+                    line-height: 12px;
                     color: #919aa3;
                     letter-spacing: 1.5px;
+                    font-stretch: condensed;
+                    margin-bottom: 2px;
+                }
+                &--mid{
+                    font-stretch: condensed;
+                    display: flex;
+                    color: #919aa3;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: -0.67px;
+                    font-weight: bold;     //ოდნავ მაღლაა ვიდრე მარჯვენა ელემენტი (ჯერ ვერ მივხვდი რატომ)
+                }
+            }
+            &__stake{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 60.5px;
+                &--up{
+                    font-weight: bold;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #919aa3;
+                    letter-spacing: 1.5px;
+                    font-stretch: condensed;
+                    margin-bottom: 2px;
+                }
 
-                    vertical-align: super;
+                &--up-freebet{
+                    font-weight: bold;
+                    font-size: 10px;
+                    line-height: 12px;
+                    letter-spacing: 1.5px;
+                    font-stretch: condensed;
+                    margin-bottom: 2px;
+
+                    padding: 0px 5px;
+                    background-color: #ffd206;
+                    color: #1e2024;
+                }
+                
+                &--mid{
+                    font-stretch: condensed;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: -0.67px;
+                    margin-bottom: 2px;
+                    sup{
+                        font-weight: bold;
+                        line-height: 12px;
+                        font-size: 10px;
+                        color: #919aa3;
+                        letter-spacing: 1.5px;
+
+                        vertical-align: super;
+                    }
                 }
             }
         }
     }
+
+
 
 
     &__btns, &__btns2{
@@ -741,6 +851,8 @@ table {
             
             img{
                 margin-right: 12px;
+                display: flex;
+
             }
             
             div{
@@ -779,6 +891,11 @@ table {
             border: none;
             border-radius: 4px;
             margin-top: 15px;
+
+            &:hover{
+                background-color: #445;
+                cursor: pointer;
+            }
         }
 
     }
@@ -835,7 +952,6 @@ table {
             &__items{
                 padding: 0px;
                 margin: 6px !important;
-                
             }
         }
         &--right{
@@ -848,7 +964,6 @@ table {
         }
     }
 
-
     .main{
 
         &__history{
@@ -856,8 +971,6 @@ table {
             &--left{
                 margin-right: 120px;
             }
-
-
 
             &__btns{
                 display: none;
