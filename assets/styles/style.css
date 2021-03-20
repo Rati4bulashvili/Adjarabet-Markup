@@ -463,6 +463,7 @@ a {
 
 .main__date--right--1 {
   width: 142px;
+  margin-right: 15px;
 }
 
 .main__date--right--2, .main__date--right--1 {
